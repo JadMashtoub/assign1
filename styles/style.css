@@ -1,0 +1,346 @@
+    /* 
+    filename: [style.css]
+    author: [Jad Mashtoub 103596586]
+    last modified: [11/04]
+    description: [apply.html, about.html, enhancements.html]
+    */ 
+
+/* Apply page start */
+    input[type=text],
+    input[type=tel],
+    input[type=email],
+    input[type=number]
+    {
+        width: 50%;
+        padding: 0.8%;
+        margin: 8px 0;
+        border: 3px solid #ccc;
+        transition: 0.5s;
+        outline: none;
+        text-align: center;
+    }
+   label{
+    display: inline-block;
+    width:155px;
+    font-size: large;
+   }
+    
+    fieldset{
+        width:35%
+    }
+    .button {
+        background-color: #38571A;
+        border: none;
+        color: white;
+        padding: 15px 28px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        /* float:center; */
+      }
+    input[type=text]:focus {
+        border: 3px solid #555;
+        
+    }
+
+    input[type=tel]:focus {
+        border: 3px solid #555;
+    }
+
+    input[type=email]:focus {
+        border: 3px solid #555;   
+    }
+
+    input:invalid {
+        border-color: #ffdddd;
+    }
+/* Apply page end */
+/* ==========================================*/
+/* General Styling start */
+@media screen and (max-width: 600px) {
+    input[type=text],
+    input[type=tel],
+    input[type=email],
+    input[type=number] {
+        width: 90%;
+    }
+
+    .container,
+    .left-panel,
+    .middle-panel,
+    .right-panel {
+        width: 100%;
+    }
+}
+    a:link {
+        color: #380000;
+        background-color: transparent;
+        text-decoration: none;
+      }
+      
+      
+      a:hover {
+        color: rgb(255, 94, 0);
+        background-color: transparent;
+        text-decoration: underline;
+      }
+      /* For logo on all pages, collapses when video is under max-width */
+      @media screen and (max-width:886px){
+        .logo {
+        display:none;
+            }
+        }
+/* embeded youtube link */
+        .frame{
+            width:"420";
+            height:"345";
+            float:right;
+        }
+/* General styling end */
+/* Footer start */
+    footer {
+        background-color: #111;
+    }
+
+    .footerNav{
+        margin:30px 0;
+    }
+    
+    .footerNav ul{
+        display:flex;
+        justify-content: center;
+        list-style-type: none;
+    }
+
+    .footerNav ul li a{
+        color:white;
+        margin: 20px;
+        text-decoration: none;
+        font-size: 1.3em;
+        opacity: 0.7;
+        transition: 0.5s;
+    
+    }
+    .footerNav ul li a:hover{
+        opacity: 1;
+    }
+    .footerBottom{
+        background-color: #000;
+        padding: 20px;
+        text-align: center;
+    }
+    .footerBottom p{
+        color: white;
+    }
+/* Footer end */
+/* About page start */
+.profile-container {
+    display: flex;
+    justify-content: center;
+}
+
+.profile {
+    margin: 0 10px;
+}
+
+.profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.content {
+    margin-top: 50px;
+}
+
+
+.description {
+        visibility: hidden;
+        max-height: 0;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+
+/* Show description when clicked and plays an animation*/
+.description:target {
+    visibility: visible;
+    max-height: 1000px;
+    opacity: 1;
+}
+
+.description h3 {
+    text-align: center;
+}
+
+.description p {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* About us page panels  */
+
+.container{
+    display:flex;
+    flex-wrap:wrap;
+}
+.left-panel {
+    width: 35%;
+    padding: 20px;
+    background-color: #58c4ec;
+    border:1px black solid;
+  }
+
+  .middle-panel {
+    flex: 1;
+    padding: 20px;
+    background-color: #00bbff;
+    border:1px black solid;
+
+  }
+
+  .right-panel {
+    float:right;
+    height:auto;
+    /* padding: 5px; */
+    background-color: #58c4ec;
+    width:400px;
+    border:1px black solid;
+  }
+  .group-members, .group-photo {
+    flex: 1 0 20em;
+}
+  .timetable {
+    width: 100%;
+    margin-top: 20px;
+    /* border:5px solid black; */
+  }
+@media screen and (min-width: 600px) {
+    .timetable {
+        width: 1000px; 
+    }
+}
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+.timetabletable{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.trstyle{
+    font-weight:bold;
+    background-color:#ADD8E6;
+}
+
+.trstyle1{
+    background-color:#F0F8FF;
+}
+
+.trstyle2{
+    background-color:#ADD8E6;
+}
+/* About page end */
+
+/* Aidan CSS */
+/*
+filename: [style.css]
+author: [Aidan Scott]
+created: [09/04]
+last modified: [11/04]
+description: [index.html, jobs.html]
+*/
+
+h1{
+    font-size:50px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+body{
+    background-color: #caf0f8;
+}
+section.feature-box {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-style: solid;
+    border-width: medium;
+    border-radius: 5px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0000FF;
+    padding: 20px;
+    color: white;
+    background-image: url('images/backgroundindex.jpeg');
+    background-size: cover;
+}
+.nav {
+    display: flex;
+    gap: 10px;
+}
+.nav a {
+    background-color: #0042AA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 10px;;
+}
+.nav a:hover {
+    background-color: #008B8B;
+}
+.logo {
+    height: 150px; 
+}
+/* Adjusts how elements on the page are displayed based on the size of your window/device */
+@media (max-width: 600px) {
+    .nav {
+        flex-direction: column;
+    }
+}
+.button1 {
+    background-color: blue;
+    color: white;
+    border-radius: 15px;
+}
+.button1:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid blue;
+    border-radius: 15px;
+    cursor: pointer;
+}
+section.feature-box.jobDC {
+    position: relative;
+    border-color: blue;
+}
+aside {
+    float: right;
+    border-style: solid;
+    border-color: gray;
+    border-radius: 15px;
+    background-color: lightgray;
+    width: 26%;
+    margin: 20px;
+    padding-left: 20px;
+}
+
+.job-title {
+    font-family: "Arial", sans-serif;
+    font-size: x-large;
+    font-variant: small-caps;
+}
+

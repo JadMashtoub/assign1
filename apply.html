@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Apply</title>
+    <link rel="stylesheet" href="styles/style.css">
+   
+</head>
+<body>
+    <div class="header">
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="jobs.html">Jobs</a>
+            <!-- <a href="apply.html">Apply now</a> -->
+            <a href="about.html">About us</a>
+            <a href="enhancements.html">Enhancements</a>
+        </div>
+        <h1>Apply</h1>
+        <img src="styles/images/BluJAY.png" alt="BluJAY logo" class="logo"/>
+    </div>
+
+    <h1>Apply</h1>
+    <h2>Enter your personal details for your selected role.</h2>
+
+    <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+
+        <!-- Job Ref -->
+        <label for="ref">Job Reference:</label>
+        <input type="text" id="ref" name="ref" placeholder="Job" maxlength="5" minlength="5" required>
+
+        <hr>
+
+        <!-- Personal Info text fields with validation -->
+        <div id="inputfield">
+            
+            <label for="first">First name:</label>
+            <input type="text" id="first" name="first" placeholder="John" required maxlength="20">
+
+            <br>
+            <label for="last">Last name:</label>
+            <input type="text" id="last" name="last" placeholder="Doe" required maxlength="20">
+            <br>
+            <label for="postcode">Post Code:</label>
+            <input type="text" id="postcode" name="pcode" placeholder="3000" required maxlength="4" minlength="4" pattern="\d*">
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Johndoe@example.com" required>
+            <br>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" placeholder="69 Swinburne road" required maxlength="40">
+            <br>
+            <label for="suburb">Suburb:</label>
+            <input type="text" id="suburb" name="suburb" placeholder="Hawthorn" required maxlength="40">
+            <br>
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" placeholder="0434123456" minlength="8" maxlength="12" required pattern="\d*">
+        <br>
+        
+            <!-- Radio buttons -->
+            <fieldset>
+                <legend>Choose your Gender</legend>
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female" required>
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="Other" required>
+            <label for="other">Other</label>
+            </fieldset>
+        <br>
+        <hr>
+            <!-- State dropdown box -->
+            <label for="state">Select your state:</label>
+            <select id="state" name="state" required>
+                <option value="">Click here to select</option>
+                <option value="VIC">Victoria</option>
+                <option value="SA">South Australia</option>
+                <option value="NT">Northern Territory</option>
+                <option value="QLD">Queensland</option>
+                <option value="NSW">New South Wales</option>
+                <option value="WA">Western Australia</option>
+                <option value="TAS">Tasmania</option>
+                <option value="ACT">Australian capital territory</option>
+
+            </select>
+            <br>
+            <!-- Skills checkbox -->
+            <h3>Skills:</h3>
+            <input type="checkbox" id="skill1" name="skill1" value="Communication">
+            <label for="skill1">Communication</label><br>
+            <input type="checkbox" id="skill2" name="skill2" value="Time Management">
+            <label for="skill2">Time Management</label><br>
+            <input type="checkbox" id="skill3" name="skill3" value="Leadership">
+            <label for="skill3">Leadership</label><br>
+            <input type="checkbox" id="skill4" name="skill4" value="Efficient">
+            <label for="skill4">Efficient</label><br>
+            <input type="checkbox" id="Otherskills" name="Otherskills" value="Otherskills">
+            <label for="Otherskills">Other skills</label>
+
+            <!-- Date -->
+            <br>
+            <label for="datesub">Date:</label>
+            <input type="date" id="datesub" name="datesub" value="2003-03-24" min="1900-01-01" required />
+                <br><br>
+                <label for="textarea">Additional skills</label><br>
+                <textarea id="textarea" name="additionalSkills" cols="50" rows="8"  placeholder="Enter your text here...">
+                    </textarea>
+                    <br><br>
+            <button class="button" type="submit">Apply</button>
+            
+
+        </div>
+    </form>
+<!-- FOOTER ================= -->
+<footer>
+    <div class="footerNav">
+        <ul><li><a href="index.html">Home</a></li>
+            <li><a href="jobs.html">Jobs</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="apply.html">Apply</a></li>
+            <li><a href="enhancements.html">Enhancements</a></li>
+        </ul>
+    </div>
+    
+<div class="footerBottom">
+    <p>Copyright &copy;2024; Designed by <span class="designer">BluJAY</span></p>
+</div>
+</footer>
+</body>
+</html>
